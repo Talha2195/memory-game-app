@@ -6,7 +6,7 @@
 }
 #gameSquareDiv {
   /* border: 1px solid black; */
-  height: 80vh;
+  height: 100vh;
 }
 
 #firstHalf,
@@ -20,4 +20,5 @@
   border: 2px solid black;
   height: 95%;
   width: 15%;
+  cursor: pointer;
  }
