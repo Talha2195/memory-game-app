@@ -1,3 +1,7 @@
+body {
+  background: palevioletred;
+}
+
 #headingDiv > h1,
 #headingDiv > h2,
 #headingDiv > h3 {
@@ -21,4 +25,10 @@
   height: 95%;
   width: 15%;
   cursor: pointer;
- }
+}
+
+.pokImg {
+  cursor: pointer;
+  height: 220px;
+  margin-top: 100px;
+}

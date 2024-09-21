@@ -8,7 +8,11 @@ try {
         const pokemonDetailsPromises = urls.map(url => fetchPokemonDetails(url))
         const pokemonDetails = await Promise.all(pokemonDetailsPromises);
         const pokemonImages = pokemonDetails.map(poks => poks.sprites.front_default)
-    return pokemonImages
+        const spritesWithIds = pokemonImages.map((url, index) => ({
+            id: index + 1,  
+            url: url,
+          }));
+    return spritesWithIds
 
 } catch (error) {
     console.log ("Couldn't do it chief")

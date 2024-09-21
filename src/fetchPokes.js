@@ -1,6 +1,6 @@
 export async function fetchPokemon() {
     try {
-      const response = await fetch('https://pokeapi.co/api/v2/pokemon?limit=10'); 
+      const response = await fetch('https://pokeapi.co/api/v2/pokemon?limit=12'); 
       
       if (!response.ok) {
         throw new Error('Network response was not ok');
